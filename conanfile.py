@@ -7,7 +7,7 @@ class ConsumerConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
     exports_sources = "src/*"
-    requires = "Hello/0.1@user/testing"
+    requires = "Hello/0.2@yann/uat"
 
     def build(self):
         cmake = CMake(self)
